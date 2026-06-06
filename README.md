@@ -6,7 +6,7 @@ For a full deep audit of an entire codebase — security, reliability, performan
 
 #### Recent reads
 
-- **[BigBodyCobain/Shadowbroker #375](https://github.com/BigBodyCobain/Shadowbroker/issues/375)** — dev-mode bind, /api/live-data lock contention, shared-pool 120s timeout. Maintainer shipped fixes in 34 min (commit 9a0a9a1).
+- **[BigBodyCobain/Shadowbroker #375](https://github.com/BigBodyCobain/Shadowbroker/issues/375)** — dev-mode bind, /api/live-data lock contention, shared-pool 120s timeout. Maintainer shipped fixes in 34 min ([commit 9a0a9a1](https://github.com/BigBodyCobain/Shadowbroker/commit/9a0a9a1)).
 - **[pirona/ghost-poster #1](https://github.com/pirona/ghost-poster/issues/1)** — Android Keystore hardening: debug keystore in git, signingConfigs.release on CI, keyAlias rotation. Maintainer applied and closed.
 - More incoming — one careful read per day.
 
