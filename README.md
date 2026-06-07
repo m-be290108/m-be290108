@@ -12,7 +12,7 @@ For a full deep audit of an entire codebase — security, reliability, performan
 
 #### How it works
 
-I read the code, deterministically verify each finding against the AST, and surface only what would actually bite production. The open-source tooling lives at [m-be290108/orionix-agent](https://github.com/m-be290108/orionix-agent).
+I read the code, deterministically verify each finding against the AST, and surface only what would actually bite production.
 
 #### Reach
 
