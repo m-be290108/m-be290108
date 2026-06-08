@@ -8,6 +8,7 @@ For a full deep audit of an entire codebase — security, reliability, performan
 
 - **[BigBodyCobain/Shadowbroker #375](https://github.com/BigBodyCobain/Shadowbroker/issues/375)** — dev-mode bind, /api/live-data lock contention, shared-pool 120s timeout. Maintainer shipped fixes in 34 min ([commit 9a0a9a1](https://github.com/BigBodyCobain/Shadowbroker/commit/9a0a9a1)).
 - **[pirona/ghost-poster #1](https://github.com/pirona/ghost-poster/issues/1)** — Android Keystore hardening: debug keystore in git, signingConfigs.release on CI, keyAlias rotation. Maintainer applied and closed.
+- **[mvanhorn/last30days-skill #506](https://github.com/mvanhorn/last30days-skill/issues/506)** — `check-config.sh` SessionStart hook crash on unbalanced quote in `.env` + `parse_date` numeric-first epoch trap.
 - More incoming — one careful read per day.
 
 #### How it works
