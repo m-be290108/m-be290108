@@ -19,4 +19,4 @@ I read the code, deterministically verify each finding against the AST, and surf
 
 - X: [@orionix_ai](https://x.com/orionix_ai)
 - Bluesky: [@orionix08.bsky.social](https://bsky.app/profile/orionix08.bsky.social)
-- For a paid deep audit: DM on X or Bluesky.
+- For a paid deep audit: [fiverr.com/mathieuballot](https://www.fiverr.com/mathieuballot) — escrow, terms, refund. DM also fine on X / Bluesky.
