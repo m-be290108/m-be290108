@@ -12,10 +12,17 @@ For a full deep audit of an entire codebase — security, reliability, performan
 - **[honojs/hono #5010](https://github.com/honojs/hono/issues/5010)** — method-override `duplex: 'half'` missing, `compress()` corrupting 206 Partial Content, aws-lambda adapter missing `globalThis.crypto` polyfill.
 - More incoming — one careful read per day.
 
+#### Proof — what maintainers say
+
+Shadowbroker #375 (BigBodyCobain, 9k stars), shared with consent.
+
+**@BigBodyCobain**, first reply: *"Thanks @m-be290108. Really useful read, and agreed on all three points for anyone self-hosting on a small VPS or running python main.py on a laptop. We shipped fixes on main in commit `9a0a9a1`."*
+
+After the follow-up deep-dive audit, **@BigBodyCobain**: *"This digest is excellent; thank you for taking the time. **You were right on every point I spot-checked against the tree.**"*
+
 #### How it works
 
-I read the code, deterministically verify each finding against the AST, and surface only what would actually bite production.
-
+I read the code line by line, deterministically verify each finding against the AST, and surface only what would actually bite production. Every claim carries a `file:line` and code citation — nothing is inferred or extrapolated. Adversarial discard pass: 10+ plausible-looking issues rejected before publication on a typical audit. This is what a scanner cannot find.
 #### Reach
 
 - X: [@orionix_ai](https://x.com/orionix_ai)
