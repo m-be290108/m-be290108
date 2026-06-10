@@ -6,6 +6,7 @@ For a full deep audit of an entire codebase — security, reliability, performan
 
 #### Recent reads
 
+- **[hatchet-dev/hatchet #4131](https://github.com/hatchet-dev/hatchet/issues/4131)** — `failTasksTx` attaches the wrong error message after dedup/reorder (positional index instead of `taskId`). Accepted by maintainer; fixed in [PR #4137](https://github.com/hatchet-dev/hatchet/pull/4137) (approved by @Gregfurman, collaborator). Same audit pass: [#4128](https://github.com/hatchet-dev/hatchet/issues/4128), [#4129](https://github.com/hatchet-dev/hatchet/issues/4129), [#4130](https://github.com/hatchet-dev/hatchet/issues/4130) — all `accepted`.
 - **[BigBodyCobain/Shadowbroker #375](https://github.com/BigBodyCobain/Shadowbroker/issues/375)** — dev-mode bind, /api/live-data lock contention, shared-pool 120s timeout. Maintainer shipped fixes in 34 min ([commit 9a0a9a1](https://github.com/BigBodyCobain/Shadowbroker/commit/9a0a9a1)).
 - **[pirona/ghost-poster #1](https://github.com/pirona/ghost-poster/issues/1)** — Android Keystore hardening: debug keystore in git, signingConfigs.release on CI, keyAlias rotation. Maintainer applied and closed.
 - **[mvanhorn/last30days-skill #506](https://github.com/mvanhorn/last30days-skill/issues/506)** — `check-config.sh` SessionStart hook crash on unbalanced quote in `.env` + `parse_date` numeric-first epoch trap.
@@ -23,8 +24,10 @@ After the follow-up deep-dive audit, **@BigBodyCobain**: *"This digest is excell
 #### How it works
 
 I read the code line by line, deterministically verify each finding against the AST, and surface only what would actually bite production. Every claim carries a `file:line` and code citation — nothing is inferred or extrapolated. Adversarial discard pass: 10+ plausible-looking issues rejected before publication on a typical audit. This is what a scanner cannot find.
+
 #### Reach
 
 - X: [@orionix_ai](https://x.com/orionix_ai)
 - Bluesky: [@orionix08.bsky.social](https://bsky.app/profile/orionix08.bsky.social)
 - For a paid deep audit: [fiverr.com/mathieuballot](https://www.fiverr.com/mathieuballot) — escrow, terms, refund. DM also fine on X / Bluesky.
+- 
